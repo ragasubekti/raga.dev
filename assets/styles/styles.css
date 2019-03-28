@@ -1,6 +1,58 @@
 html,
 body {
   font-family: 'Product Sans';
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-overlay {
+  background: rgba(0,0,0,.7);
+  z-index: 2;
+  width: 300px;
+  height: 160px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.image-overlay:hover {
+  background: rgba(0,0,0,.1);
+}
+
+
+.navigation-link {
+  float: right;
+}
+
+.navigation-link > li {
+  list-style: none;
+  display: inline-block;
+}
+
+#jumbotron {
+  background-color: #333;
+  min-height: 800px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  
+}
+
+#jumbotron > h1 {
+  margin-left: 100px;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+#jumbotron > h1 > span {
+  display: block;
 }
 
 /* .big- */
