@@ -1,8 +1,9 @@
 html,
-body, main, nav, header, ul {
+body, main, nav, header, ul, h1, h2, h3, h4, p {
   font-family: 'Product Sans';
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .image-container {
@@ -54,22 +55,45 @@ body, main, nav, header, ul {
 
 }
 
-#jumbotron {
-  min-height: 800px;
+.jumbotron {
+  min-height: 100vh;
   color: #fff;
   display: flex;
   align-items: center;
   
 }
 
-#jumbotron h1 {
+.jumbotron h1 {
   margin-left: 100px;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 400;
 }
 
-#jumbotron h1 span {
+.jumbotron h1 span {
   display: block;
 }
 
-/* .big- */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}
+
+
+.section-header-title {
+  font-size: 32px;
+}
+
+.section-header-line {
+  margin: 5px;
+  height: 4px;
+  width: 100px;
+  background: #2093FE;
+}
+
+.section-header-subtitle {
+  margin: 5px;
+  color: #555;
+}
