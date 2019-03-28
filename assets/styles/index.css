@@ -1,5 +1,5 @@
 html,
-body {
+body, main, nav, header, ul {
   font-family: 'Product Sans';
   margin: 0;
   padding: 0;
@@ -28,16 +28,33 @@ body {
 
 
 .navigation-link {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.navigation-link > li {
+.navigation-link  li {
   list-style: none;
   display: inline-block;
+  margin: 20px;
+}
+
+.navigation-link li a:link, .navigation-link li a:active {
+  padding: 20px;
+  transition: 0.25s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation-link li a:hover {
+  background: rgba(255,255,255, 0.1);
+}
+
+.bg-dark  {
+  background-color: #333;
+
 }
 
 #jumbotron {
-  background-color: #333;
   min-height: 800px;
   color: #fff;
   display: flex;
@@ -45,13 +62,13 @@ body {
   
 }
 
-#jumbotron > h1 {
+#jumbotron h1 {
   margin-left: 100px;
   font-size: 64px;
   font-weight: 400;
 }
 
-#jumbotron > h1 > span {
+#jumbotron h1 span {
   display: block;
 }
 
