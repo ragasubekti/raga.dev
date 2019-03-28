@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>raga.wtf | Raga Subekti Personal Website</title>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/styles/index.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -14,12 +16,13 @@
 </head>
 
 <body>
-  <!-- Navigation -->
 
   <!-- Main -->
   <main>
 
     <div class="bg-dark">
+      <!-- Navigation -->
+
       <nav>
         <ul class="navigation-link">
           <li>
@@ -40,7 +43,7 @@
         </ul>
       </nav>
 
-      <header id="jumbotron" class="jumbotron">
+      <header id="jumbotron" class="jumbotron bg-dark">
         <h1>
           <span>Hi!</span>
           <span>I’m Raga Subekti</span>
@@ -50,14 +53,14 @@
       </header>
     </div>
 
-    <section id="what-i-do">
+    <section id="what-i-do" class="what-i-do">
       <div class="section-header">
         <h2 class="section-header-title">What I Do</h2>
         <div class="section-header-line"></div>
         <p class="section-header-subtitle">Some of the things that i do</p>
       </div>
 
-      <ul>
+      <ul class="what-i-do-list container">
         <li>Mobile Application</li>
         <li>UI/UX</li>
         <li>Web Application</li>
@@ -65,14 +68,14 @@
       </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="bg-dark projects">
       <div class="section-header">
         <h2 class="section-header-title">Projects</h2>
         <div class="section-header-line"></div>
         <p class="section-header-subtitle">Some of my finished projects</p>
       </div>
 
-      <ul>
+      <ul class="container">
         <li>
           <div class="image-container">
             <img src="assets/images/project-robocall.jpg" alt="Projects ROBOCALL" />
@@ -85,28 +88,27 @@
           <div>
             <img src="assets/images/project-sample.jpg" alt="Projects 2" />
           </div>
-          <h3 class="section-header-title">Projects 2</h3>
-          <div class="section-header-line"></div>
-          <p class="section-header-subtitle">Summary</p>
+          <h3>SIMDIK</h3>
+          <p>Summary</p>
         </li>
         <li>
           <div>
             <img src="assets/images/project-sample.jpg" alt="Projects 3" />
           </div>
-          <h3>Projects 3</h3>
+          <h3>Boogaloo</h3>
           <p>Summary</p>
         </li>
       </ul>
     </section>
 
-    <section id="resume">
+    <section id="resume" class="resume">
       <div class="section-header">
         <h2 class="section-header-title">Resume</h2>
         <div class="section-header-line"></div>
         <p class="section-header-subtitle">Work experiences and education</p>
       </div>
 
-      <div>
+      <section class="container">
         <h4>Education</h4>
         <ul>
           <li>
@@ -115,9 +117,9 @@
             <div>Rekayasa Perangkat Lunak</div>
           </li>
         </ul>
-      </div>
+      </section>
 
-      <section>
+      <section class="container">
         <h4>Experiences</h4>
         <ul>
           <li>
@@ -143,77 +145,157 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h4>Skills</h4>
-        <div>
-          <ul>
-            <li>Vue.JS</li>
-            <li>Flutter</li>
-            <li>React</li>
-            <li>React Native</li>
+        <div class="row skillset">
+          <!-- <div> -->
+          <ul class="col">
+            <li>
+              <p>Vue.JS</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>Flutter</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>React</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>React Native</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
           </ul>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS/SCSS</li>
-            <li>JavaScript</li>
+          <ul class="col">
+            <li>
+              <p> HTML</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>CSS</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>SASS/SCSS</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>JavaScript</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
           </ul>
-          <ul>
-            <li>SQL</li>
-            <li>No SQL</li>
-            <li>Git</li>
-            <li>UI/UX</li>
+          <ul class="col">
+            <li>
+              <p>SQL</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>No SQL</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>Git</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>UI/UX</p>
+              <div class="progress">
+                <div class="progress-bar bg-lightgreen" style="width: 90%">
+                </div>
+              </div>
+            </li>
           </ul>
+          <!-- </div> -->
         </div>
       </section>
     </section>
   </main>
   <!-- Main -->
 
-  <footer>
-    <div id="contact">
-      <h4>Contact Me @</h4>
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div id="contact" class="col contact">
+          <h4>Contact Me @</h4>
+          <ul>
+            <li>
+              <a href="https://raga.wtf/facebook">
+                <i class="fab fa-facebook"></i> ragasubekti92
+              </a>
+            </li>
+            <li>
+              <a href="https://raga.wtf/instagram">
+                <i class="fab fa-instagram"></i> ragasubekti
+              </a>
+            </li>
+            <li>
+              <a href="https://raga.wtf/linkedin">
+                <i class="fab fa-linkedin"></i> Raga Subekti
+              </a>
+            </li>
+            <li>
+              <a href="https://raga.wtf/medium">
+                <i class="fab fa-medium"></i> ragasubekti
+              </a>
+            </li>
+            <li>
+              <a href="https://raga.wtf/github">
+                <i class="fab fa-github"></i> ragasubekti
+              </a>
+            </li>
+            <li>
+              <a href="https://raga.wtf/email">
+                <i class="far fa-envelope"></i> ragasubekti@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>&copy; 2019, Raga Subekti</p>
+          <p>Source: <a href="https://raga.wtf">https://raga.wtf/sc</a></p>
+          <p>Made in <b>Jakarta, Indonesia</b></p>
+        </div>
+      </div>
 
-      <ul>
-        <li>
-          <a href="https://raga.wtf/facebook">
-            <i class="fab fa-facebook"></i> ragasubekti92
-          </a>
-        </li>
-        <li>
-          <a href="https://raga.wtf/instagram">
-            <i class="fab fa-instagram"></i> ragasubekti
-          </a>
-        </li>
-        <li>
-          <a href="https://raga.wtf/linkedin">
-            <i class="fab fa-linkedin"></i> Raga Subekti
-          </a>
-        </li>
-        <li>
-          <a href="https://raga.wtf/medium">
-            <i class="fab fa-medium"></i> ragasubekti
-          </a>
-        </li>
-        <li>
-          <a href="https://raga.wtf/github">
-            <i class="fab fa-github"></i> ragasubekti
-          </a>
-        </li>
-        <li>
-          <a href="https://raga.wtf/email">
-            <i class="far fa-envelope"></i> ragasubekti@gmail.com
-          </a>
-        </li>
-      </ul>
-    </div>
 
-    <div>
-      <p>&copy; 2019, Raga Subekti</p>
-      <p>Source: <a href="https://raga.wtf">https://raga.wtf/sc</a></p>
-      <p>Made in <b>Jakarta, Indonesia</b></p>
+
     </div>
   </footer>
+
 </body>
 
 </html>

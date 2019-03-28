@@ -1,9 +1,13 @@
 html,
 body, main, nav, header, ul, h1, h2, h3, h4, p {
-  font-family: 'Product Sans';
+  font-family: 'Product Sans', Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 .image-container {
@@ -43,7 +47,6 @@ body, main, nav, header, ul, h1, h2, h3, h4, p {
   padding: 20px;
   transition: 0.25s;
   color: #fff;
-  text-decoration: none;
 }
 
 .navigation-link li a:hover {
@@ -52,7 +55,11 @@ body, main, nav, header, ul, h1, h2, h3, h4, p {
 
 .bg-dark  {
   background-color: #333;
+  color: #fff;
+}
 
+.bg-lightgreen {
+  background: #27DB7A;
 }
 
 .jumbotron {
@@ -78,7 +85,7 @@ body, main, nav, header, ul, h1, h2, h3, h4, p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 40px;
+  /* margin: 40px; */
 }
 
 
@@ -96,4 +103,27 @@ body, main, nav, header, ul, h1, h2, h3, h4, p {
 .section-header-subtitle {
   margin: 5px;
   color: #555;
+}
+
+.what-i-do-list li {
+  display: inline-block;
+}
+
+.contact {
+  margin: 20px;
+  padding: 20px;
+}
+
+.progress-bar , .progress{
+  height: 10px;
+  border-radius: 5px;
+}
+
+.skillset ul li{
+  list-style: none;
+  margin: 10px 75px 10px 0;
+}
+
+.what-i-do, .projects, .resume {
+  padding: 40px;
 }
