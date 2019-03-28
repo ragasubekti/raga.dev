@@ -38,7 +38,7 @@ body, main, nav, header, ul {
   margin: 20px;
 }
 
-.navigation-link li a:link, .navigation-link li a:active {
+.navigation-link li a:link, .navigation-link li a:active, .navigation-link li a:visited {
   padding: 20px;
   transition: 0.25s;
   color: #fff;
