@@ -122,8 +122,17 @@ a {
   color: #555;
 }
 
+.what-i-do-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .what-i-do-list li {
-  display: inline-block;
+  /* display: inline-block; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact {
@@ -195,4 +204,11 @@ a {
   right: 0;
   margin-bottom: 40px;
   text-align: right;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #ccc;
 }
