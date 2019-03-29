@@ -9,7 +9,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: 'Product Sans', 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  font-family: "Product Sans", "Verdana", "Geneva", "Tahoma", sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -21,6 +21,11 @@ a {
 
 .image-container {
   position: relative;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  border-radius: 5px;
 }
 
 .image-overlay {
@@ -31,13 +36,14 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  content: '';
+  content: "";
   border-radius: 5px;
   transition: 0.25s;
+  border-radius: 5px;
 }
 
 .image-overlay:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
 }
 
 .navigation-link {
@@ -68,6 +74,10 @@ a {
   color: #fff;
 }
 
+.bg-dark > .section-header > .section-header-subtitle {
+  color: #eee;
+}
+
 .bg-lightgreen {
   background: #27db7a;
 }
@@ -93,6 +103,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .section-header-title {
@@ -139,4 +150,49 @@ a {
 .projects,
 .resume {
   padding: 40px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.project-list li {
+  list-style: none;
+}
+
+.contact-list li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-link a:link,
+.contact-link a:visited,
+.contact-link a:active {
+  color: #fff;
+  padding: 5px;
+}
+
+.contact-link a i {
+  margin-right: 5px;
+}
+
+.contact-link a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+  position: relative;
+}
+
+.copyright-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 40px;
+  text-align: right;
 }
